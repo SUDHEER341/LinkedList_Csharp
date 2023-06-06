@@ -127,7 +127,31 @@ namespace CustomLinkedList
             Console.WriteLine("END");
         }
 
-        
+        //==================custom stack =================
+
+        public void Push(T data)
+        {
+            AddFirst(data);
+        }
+
+        public void Pop()
+        {
+            DeleteFirst();
+        }
+
+        public T Peek()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Stack is Empty!");
+            }
+            return head.Data;
+        }
+
+        public bool isEmpty()
+        {
+            return head == null;
+        }
     }
     
 }

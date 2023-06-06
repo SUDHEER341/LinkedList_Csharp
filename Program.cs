@@ -19,6 +19,17 @@ namespace CustomLinkedList
             linkedList.DeleteLast(); //2->5->1
             linkedList.DeleteExisting(5); //2->1
             linkedList.PrintList();
-         }
+
+            //===========stack operations===========
+
+            linkedList.Push(4);
+            linkedList.Push(5);
+            linkedList.Push(6);
+            linkedList.Push(7);//7->6->5->4
+            linkedList.Pop(); //6->5->4
+            Console.WriteLine(linkedList.Peek());    // pick the first element  ->6
+            Console.WriteLine(linkedList.isEmpty());
+            linkedList.PrintList();
+        }
     }
 }
