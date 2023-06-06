@@ -152,6 +152,32 @@ namespace CustomLinkedList
         {
             return head == null;
         }
+
+        // ==============Queue operations=========== 
+
+        public void Enqueue(T data)
+        {
+            AddFirst(data);
+        }
+
+        public void Dequeue()
+        {
+            DeleteLast();
+        }
+
+        public T Peek_Queue()
+        {
+            if (isEmpty())
+            {
+                Console.WriteLine("Queue is Empty!");
+            }
+            return head.Data;
+        }
+
+        public bool Is_Empty_Queue()
+        {
+            return head == null;
+        }
     }
     
 }

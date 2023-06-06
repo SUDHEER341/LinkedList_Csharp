@@ -30,6 +30,14 @@ namespace CustomLinkedList
             Console.WriteLine(linkedList.Peek());    // pick the first element  ->6
             Console.WriteLine(linkedList.isEmpty());
             linkedList.PrintList();
+
+            //queue operations
+
+            linkedList.Enqueue(10);
+            linkedList.Enqueue(20);
+            linkedList.Enqueue(30);
+            linkedList.Dequeue();
+            linkedList.PrintList();
         }
     }
 }
